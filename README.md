@@ -5,7 +5,7 @@ You might know me by multiple names, and that's okay.
 - 🔍 Seeking jobs/internships in the United States
   - 📫 contact.seiwynn@gmail.com
 
-- Currently ~~screwing up~~ learning... hmm...multiple things that I'm unsure of?
+- Currently ~~screwing up~~ learning... prob discord bots and a few other things
 
 - [*Click here for full list of my works*](my_works.md)
 
