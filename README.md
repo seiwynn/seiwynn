@@ -2,16 +2,19 @@
 
 You might know me by multiple names, and that's okay.
 
-- 🔍 Seeking jobs/internships in the United States
+- 🔍 Seeking employment!
+
+  - Full time jobs
+  - Anywhere in the United States
   - 📫 contact.seiwynn@gmail.com
-- Currently ~~screwing up~~ learning... prob discord bots and a few other things
-- [*Click here for full list of my works*](my_works.md)
+- Currently ~~screwing up~~ playing with... discord bots!
+- *Click [here](my_works.md) for full list of my works*
 
 #### Things I'm proud of...
 
 - [Arxiv fix](https://github.com/seiwynn/arxiv-fix) -  Python spider script for fixing Arxiv's file names
 - My discord bots
-  - [#1 - A GPT bot](https://github.com/seiwynn/discord-bot-1-gpt) that accepts messages from multiple sources (mentions/DMs/slash commands)
+  - [#2 - A template bot](https://github.com/seiwynn/discord-bot-2-template) that includes basic architecture for easy expanding
 
 <!--
 
