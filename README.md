@@ -1,4 +1,4 @@
-### Wynn - @seiwynn
+## Wynn - @seiwynn
 
 You might know me by multiple names, and that's okay.
 
@@ -10,17 +10,12 @@ You might know me by multiple names, and that's okay.
 - Currently ~~screwing up~~ playing with... discord bots!
 - *Click [here](my_works.md) for full list of my works*
 
-#### Things I'm proud of...
+### Things I'm proud of...
 
-- [Arxiv fix](https://github.com/seiwynn/arxiv-fix) -  Python spider script for fixing Arxiv's file names
+- [Arxiv fix](https://github.com/seiwynn/arxiv-fix) -  A python spider script for fixing Arxiv's file names
 - My discord bots
   - [#2 - A template bot](https://github.com/seiwynn/discord-bot-2-template) that includes basic architecture for easy expanding
-
-<!--
-
-[#2 - A status bot](https://github.com/seiwynn/discord-bot-2-mystatus) that supports work inquiries (and probably more stuff in the future)
-
--->
+  - [#5 - A GPT bot](https://github.com/seiwynn/discord-bot-5-gpt-rewrite) that lets you use ChatGPT from multiple sources (mentions/DMs/slash commands)
 
 <!--
 **seiwynn/seiwynn** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
