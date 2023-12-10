@@ -55,15 +55,18 @@ Most of these were found with a "How to host Discord bot" Google search. I'm pre
   - (hopefully) stable enough
   - I took this one in the end
 
--  Heroku
-  - 7USD/month, might only be able to run 1 bot in it (because I'm bad at parallel)
+- Heroku
+  - 7USD/month
   - probably has more control than Pebblehost, as it's the 1st one in the list to be an actual server, not just a hosting service
   - I'll probably switch to Heroku if Pebblehost somehow screws me up in the future (RIP wallet, in that case)
+
+
 - Google Cloud/AWS
   - obviously would work
   - probably won't be that expensive
   - last resort for me, because I don't want to use my brain just for server hosting.
 - Hopefully I won't have to update this in the future (10/27/2023)
+  - 12/10/2023 update: There's probably no way around AWS, even if it's just certifications for employment. Oh well.
 
 ### Conclusion
 
