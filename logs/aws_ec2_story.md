@@ -10,6 +10,10 @@ Someone with an AWS Root account
 
 - Make them give you an AWS IAM account
 
+  ![image-20231213233559297](aws_ec2_story.assets/image-20231213233559297.png)
+
+- You will get a temporary set of credentials, which you can use to log in, and change your password.
+
 - This will be your point of access in the future
 
 - you'll ask for more access as you take over more responsibilities
@@ -21,21 +25,39 @@ Someone with an AWS Root account
 before you start, ask for:
 
 - access to secret manager
+
 - a secret access key for your IAM account 
+
+  - an admin can create it for you, you usually can't do this yourself.
+
   - it will go into your local AWS cli for testing secret retrieval
+
+    [Authenticate with IAM user credentials - AWS Command Line Interface (amazon.com)](https://docs.aws.amazon.com/cli/latest/userguide/cli-authentication-user.html)
+
 - a pre-configured production env (such as an AWS EC2 already with credentials ready)
 
 Okay, now...
 
+tutorial links: 
+
+- [What is AWS Secrets Manager? - AWS Secrets Manager (amazon.com)](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html)
+- [AWS Secrets Manager - Working with Secrets (youtube.com)](https://www.youtube.com/watch?v=DjvlhrBRtXM)
+
 1. get to secrets manager page
+
+   ![image-20231213234828739](aws_ec2_story.assets/image-20231213234828739.png)
 
 2. upload your secret
 
    (It would look like a python dictionary with key value pairs)
 
-   copy code from here
+   copy code from here (scroll to the bottom on a secrets page)
+
+   ![image-20231213234948667](aws_ec2_story.assets/image-20231213234948667.png)
 
 3. install and config your local AWS cli to give your dev env access to secrets
+
+   (again, [Authenticate with IAM user credentials - AWS Command Line Interface (amazon.com)](https://docs.aws.amazon.com/cli/latest/userguide/cli-authentication-user.html))
 
    test your code to make sure that you're using secrets correctly
 
@@ -51,9 +73,7 @@ before you start, ask for:
 
   - This will be used to connect to the server
 
-- (recommended) a Linux env
-
-  ~~mostly because I have no idea how to connect on windows~~
+- something that lets you use SSH ~~(e.g. a Linux env)~~
 
 - learn a bit about ...
 
@@ -67,6 +87,8 @@ before you start, ask for:
 Okay, now...
 
 1. Follow the tutorial on AWS (including the `chmod` part) on connecting to your EC2
+
+   ![image-20231213235210457](aws_ec2_story.assets/image-20231213235210457.png)
 
 2. BAM, you're now in the terminal of a remote server. Do what you want.
 
