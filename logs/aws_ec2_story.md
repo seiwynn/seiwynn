@@ -1,12 +1,12 @@
-# How I ~~finally~~ got access to an AWS EC2
+# How I ~~finally~~ got access to AWS
 
 Hopefully I remember to send my sacabambaspis to my own EC2.
 
 >  A (hopefully soon) [*Sacabambaspis*](https://en.wikipedia.org/wiki/Sacabambaspis) story.
 
-### Prerequisites
+### Prerequisites - AWS IAM
 
-Someone with an AWS Root account
+Find someone with an AWS Root account
 
 - Make them give you an AWS IAM account
 
@@ -14,13 +14,46 @@ Someone with an AWS Root account
 
 - You will get a temporary set of credentials, which you can use to log in, and change your password.
 
-- This will be your point of access in the future
+  - This will be your point of access in the future
+  - you'll ask for more access as you take over more responsibilities
 
-- you'll ask for more access as you take over more responsibilities
 
   ~~or you'll become an admin at some point, because root owner is tired of you asking for access~~
 
+- Also ask for *server region* - you'll need to be in the correct region to see everything else.
+
+  ![image-20231216205237472](aws_ec2_story.assets/image-20231216205237472.png)
+
+### Parameter Storage
+
+This is important because...**after you get your IAM account, every credential from now on should be (ideally) passed from here.**
+
+- Parameter Storage does *NOT* replace [secrets manager](#Secrets-Manager), do *NOT* store your credentials here.
+
+- If you're in an emergency, make a `.zip` file with a password, and call the other person to tell them the password - don't *ever* use plain text files over regular chat apps and email.
+
+Before you start, ask for:
+
+- read/write access for parameter storage 
+- they're (probably) called `ssm:DescribeParameters` and `ssm:PutParameter`
+
+Okay, now...
+
+1. head to parameter store
+
+   ![image-20231216205430496](aws_ec2_story.assets/image-20231216205430496.png)
+
+2. if you're making one yourself, click on "Create parameter" on the right. Standard settings usually work.
+
+   ![image-20231216210120490](aws_ec2_story.assets/image-20231216210120490.png)
+
+3. If you're grabbing stuff (e.g. your access key) that someone else uploaded, click on it, and you should find its value on the bottom left.
+
+   <img src="aws_ec2_story.assets/image-20231216210156871.png" alt="image-20231216210156871" style="zoom:50%;" />
+
 ### Secrets Manager
+
+This is important because...**you'll need to store credentials in your code in here.**
 
 before you start, ask for:
 
@@ -33,6 +66,8 @@ before you start, ask for:
   - it will go into your local AWS cli for testing secret retrieval
 
     [Authenticate with IAM user credentials - AWS Command Line Interface (amazon.com)](https://docs.aws.amazon.com/cli/latest/userguide/cli-authentication-user.html)
+    
+  - Do *NOT* pass secret key using plain text correspondence - use  [AWS parameter storage](#Parameter-Storage)
 
 - a pre-configured production env (such as an AWS EC2 already with credentials ready)
 
@@ -65,6 +100,8 @@ And now you're done. If your test/prod env is already configured, you can delive
 
 ### EC2
 
+This is important because...**you'll probably run your code here.**
+
 before you start, ask for:
 
 - EC2 access
@@ -72,6 +109,7 @@ before you start, ask for:
 - a `.pem` file, if you're using SSH
 
   - This will be used to connect to the server
+  - Again, do *NOT* pass the `.pem` file using plain text correspondence - use  [AWS parameter storage](#Parameter-Storage)
 
 - something that lets you use SSH ~~(e.g. a Linux env)~~
 
