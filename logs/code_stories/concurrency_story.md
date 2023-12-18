@@ -34,7 +34,13 @@ This could be:
   - But also extremely useful, as it increase system robustness and throughput, while maintaining an acceptable hardware cost
   - And apparently is everywhere in big tech.
 
-I'll mostly talk about the second one in the rest of the story, because anyone that's heard of front-end/back-end probably has *some* knowledge on how the first one can be made.
+An easier imagination scenario would be:
+
+- Pull out a toy project, and give it 1,000 users consecutively
+- imagine the throughput size, and speculate what it would cost to handle that throughput
+- and (probably) make a distributed system out of it ~~because that's what attracts HRs in resumes~~
+
+I'll mostly talk about the second one (distributed system in terms of throughput) in the rest of the story, because anyone that's heard of front-end/back-end probably has *some* knowledge on how the first one (distributed in terms of layers/processing scopes) can be made.
 
 ### So how would you do it?
 
@@ -56,9 +62,9 @@ And of course you don't always do that from scratch, but even just learning pre-
 stuff that I heard include:
 
 - Python series: Flask - Celery - RabbitMQ - mongo (not including failover and other robustness stuff)
-- Java series: Spring boot (with included parallel stuff) - Hibernate - MySQL
+- Java series: Spring boot (with included parallel stuff) - Hibernate - MySQL (maybe, or you can use mongo, doesn't matter that much)
 
-Which I probably won't touch soon.
+Which I probably won't touch soon ~~mostly because upscaling a preexisting server is usually way more stable on toy projects~~.
 
 ---
 
