@@ -1,13 +1,15 @@
-## Wynn - @seiwynn
+## Hitomi Wynne - @seiwynn
 
 You might know me by multiple names, and that's okay.
 
+<!--
 - 🔍 Seeking employment!
 
   - Full time jobs
   - Anywhere in the United States
   - 📫 contact.seiwynn@gmail.com
-- Currently ~~screwing up~~ playing with... discord bots!
+-->
+- Currently ~~screwing up~~ playing with... Java and Springboot? Maybe?
 - *Click [here](my_works.md) for full list of my works*
 
 ### Things I'm proud of...
