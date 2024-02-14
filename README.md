@@ -1,4 +1,4 @@
-## Hitomi Wynne - @seiwynn
+## Hitomi Wynn - @seiwynn
 
 You might know me by multiple names, and that's okay.
 
